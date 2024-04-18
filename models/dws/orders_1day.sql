@@ -2,7 +2,7 @@ with orders as (
 
     select * from {{ ref('orders') }}
 
-),
+)
 select
     order_date,
     sum(total_amount) as total_amount
