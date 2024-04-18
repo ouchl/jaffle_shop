@@ -5,6 +5,6 @@ with orders as (
 )
 select
     order_date,
-    sum(total_amount) as total_amount
+    sum(amount) as daily_sales_amount
 from orders
 group by order_date
